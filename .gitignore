@@ -1,0 +1,13 @@
+# Ignore everything
+/*
+!.gitignore
+
+# Except for the files and folders we want to track
+!.bashrc
+!.xprofile
+!.pkgs
+!.config
+!.git-prompt.sh
+!.scritps
+!Themes
+!Wallpapers

@@ -1,0 +1,19 @@
+# Keyboard Layout
+setxkbmap es &
+
+# Composer
+picom &
+
+# Wallpaper
+WALLPAPER_CONFIG_FILE="$HOME/.config/.theme/config.json"
+wallpaper=$(jq '.wallpaper' "$WALLPAPER_CONFIG_FILE" | sed 's/"//g')
+feh --bg-scale "$HOME/Wallpapers/$wallpaper" &
+
+# Autonomous devices
+udiskie -t &
+
+# Network at status bar
+nm-applet &
+
+# Monitor configuration 
+xrandr --output HDMI-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --off --output DP-5 --off
