@@ -1,6 +1,0 @@
-#!/bin/bash
-
-pacman -Qqen > ~/.pkgs
-
-# add AUR pkgs
-# pacman -Qqem >> ~/.pkgs
