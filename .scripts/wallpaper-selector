@@ -1,0 +1,15 @@
+#!/bin/sh
+
+WALLPAPERS_DIR="$HOME/Wallpapers"
+CONFIG_FILE="$HOME/.config/.theme/config.json"
+
+wallpaper_options=$(ls $WALLPAPERS_DIR)
+
+wallpaper_selection=$(echo -e "$wallpaper_options" | rofi -dmenu -i -p "Select a wallpaper")
+
+# Set the wallpaper
+
+if [ -n "$wallpaper_selection" ]; then
+    jq --arg wallpaper "$wallpaper_selection" '.wallpaper = $wallpaper' "$CONFIG_FILE" > "${CONFIG_FILE}.tmp" && mv "${CONFIG_FILE}.tmp" "$CONFIG_FILE"
+    feh --bg-scale $WALLPAPERS_DIR/$wallpaper_selection
+fi
