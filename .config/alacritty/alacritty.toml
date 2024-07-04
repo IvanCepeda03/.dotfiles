@@ -7,7 +7,7 @@ normal = {family = "UbuntuMono Nerd Font"}
 bold =  {family = "UbuntuMono Nerd Font"}
 italic =  {family = "UbuntuMono Nerd Font"}
 bold_italic= {family = "UbuntuMono Nerd Font"}
-size = 13.25
+size = 11.5
 
 # Material Ocean Theme
 [colors.primary]

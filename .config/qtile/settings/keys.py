@@ -77,9 +77,13 @@ keys = [
 
     # UTILITIES
     # Volume
-    Key([mod], "KP_Add", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%"), desc="Raise the system volume"),
-    Key([mod], "KP_Subtract", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%"), desc="Lower the system volume"),
-    Key([mod], "KP_Multiply", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"), desc="Toggle sound mute"),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("pamixer --decrease 5"), desc="Raise the system volume"),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("pamixer --increase 5"), desc="Lower the system volume"),
+    Key([], "XF86AudioMute", lazy.spawn("pamixer --toggle-mute"), desc="Toggle mute"),
+
+    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%"), desc="Raise the brightness"),
+    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-"), desc="Lower the brightness")
+
 ]
 
 # Add key bindings to switch VTs in Wayland.
