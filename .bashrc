@@ -8,6 +8,7 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias tree='tree -C'
+alias ls='exa --group-directories-first'
 alias dotfiles="git --git-dir $HOME/.dotfiles/ --work-tree $HOME"
 
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
