@@ -225,3 +225,14 @@ Para cambiar el tema de rofi:
 ```bash
 rofi-theme-selector
 ```
+
+Los temas de Rofi se encuentran en el directorio `/usr/share/rofi/themes/'. 
+Es posible descargar temas o incluso crear los tuyos propios y moverlos a esa carpeta para aplicarlos.
+En mi caso uso el tema [OneDark](https://github.com/davatorium/rofi-themes/blob/master/User%20Themes/onedark.rasi).
+
+Rofi se puede configurar mediante el archivo `/.config/rofi/config.rasi/`. 
+Para ver la documentación de Rofi: 
+
+```bash
+man rofi
+```
