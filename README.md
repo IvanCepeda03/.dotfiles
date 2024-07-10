@@ -236,3 +236,47 @@ Para ver la documentación de Rofi:
 ```bash
 man rofi
 ```
+
+# Neovim
+
+[Neovim](https://neovim.io/) es un editor de texto basado en terminal.
+Para instalar Neovim:
+
+```bash
+sudo pacman -S neovim
+```
+
+Creamos el siguiente enlace para que los programas que quieran abrir `vim` abran `neovim`. 
+Además esto nos permitirá abrir `nvim` escribiendo `vim`.
+
+```bash
+cd /bin
+sudo ln -s nvim vim
+```
+
+Los archivos de configuración de `nvim` se encuentran en `~/.config/nvim`
+
+
+## Plugins
+
+Para tener pluggins en Neovim es necesario instalar [vim-plug](https://github.com/junegunn/vim-plug).
+Para instalarlo:
+
+```bash
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
+Los plugins a instalar deben ser añadidos al archivo `~/.config/nvim/init.vim`.
+Una vez añadidos, para instalarlos, desde nvim:
+
+```vim
+:PlugInstall
+```
+
+Para desinstalar plugins hay que eliminarlos del archivo `~/.config/nvim/init.vim`.
+Una vez eliminados:
+
+```vim
+:PlugClean
+```
