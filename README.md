@@ -1,6 +1,6 @@
 # Problemas con las teclas Fn del teclado
 
-Tengo un teclado NewSkill Serive V2 y no funcionaban las teclas Fn. 
+Tengo un teclado NewSkill Serike V2 y no funcionaban las teclas Fn. 
 Para solucionarlo he seguido las instruciones de esta 
 [página](https://wiki.archlinux.org/title/Apple_Keyboard#Function_keys_do_not_work):
 
