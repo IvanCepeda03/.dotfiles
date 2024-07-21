@@ -5,9 +5,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias tree='tree -C'
+alias tree='exa -T'
+alias ls='exa --group-directories-first'
+alias cat='bat --style=plain --paging=never'
 alias dotfiles="git --git-dir $HOME/.dotfiles/ --work-tree $HOME"
 
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
