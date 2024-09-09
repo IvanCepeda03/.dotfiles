@@ -6,7 +6,7 @@ from os import path
 
 mod = "mod4"
 terminal = "alacritty"
-browser = "google-chrome-stable"
+browser = "firefox"
 
 theme_selector_path = path.join(path.expanduser("~"), ".scripts", "theme-selector")
 wallpaper_selector_path = path.join(path.expanduser("~"), ".scripts", "wallpaper-selector")
