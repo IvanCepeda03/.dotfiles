@@ -20,3 +20,6 @@ export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[33m\]$(__gi
 
 
 neofetch
+
+# Created by `pipx` on 2024-09-13 00:38:22
+export PATH="$PATH:/home/ivan/.local/bin"
