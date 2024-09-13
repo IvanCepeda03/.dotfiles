@@ -7,11 +7,12 @@ from .keys import mod, keys
 #   : nf-md-firefox
 #   : nf-fa-code
 #   : nf-cod-terminal
+# 󰈙  : nf-md-file_document
 # 󰕼  : nf-md-vlc
 #   : nf-fa-discord
 # 󰌨  : nf-md-layers
 
-groups = [Group(i) for i in ["󰈹 ", " ", " ", "󰕼 ", " ", "󰌨 "]]
+groups = [Group(i) for i in ["󰈹 ", " ", " ", "󰈙 ", "󰕼 ", " ", "󰌨 "]]
 
 for i, group in enumerate(groups, 1):
     actual_key = str(i)
